@@ -311,12 +311,12 @@ export async function generateVideo(
       }
     }
 
-    // 检查是否有素材
-    const hasFilePaths = filePaths && filePaths.length > 0;
-    if (imageFields.length === 0 && videoFields.length === 0 && !hasFilePaths) {
-      throw new APIException(EX.API_REQUEST_FAILED,
-        `omni_reference 模式需要至少上传一个素材文件 (image_file_*, video_file_*) 或提供素材URL`);
-    }
+    // // 检查是否有素材
+    // const hasFilePaths = filePaths && filePaths.length > 0;
+    // if (imageFields.length === 0 && videoFields.length === 0 && !hasFilePaths) {
+    //   throw new APIException(EX.API_REQUEST_FAILED,
+    //     `omni_reference 模式需要至少上传一个素材文件 (image_file_*, video_file_*) 或提供素材URL`);
+    // }
 
     let totalVideoDuration = 0; // 累计视频时长
 
